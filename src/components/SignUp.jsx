@@ -4,6 +4,7 @@ import { auth, db } from "../firebase";
 import './signup.css';
 import { collection, addDoc, setDoc, doc } from "firebase/firestore";
 import { NavLink } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 function SignUp() {
 
@@ -13,7 +14,7 @@ function SignUp() {
     const [loader, setLoader] = useState(false);
     const [user, setUser] = useState("");
     const [error, setError] = useState("")
-
+    const history = useHistory();
 
     const createUser = async () => {
         try {
@@ -30,6 +31,7 @@ function SignUp() {
 
             });
             setUser(userCredential.user);
+            history.push("/feed");
         }
         catch (error) {
             setError(error);
@@ -84,7 +86,7 @@ function SignUp() {
                                             <input type="name" onChange={Namehandler} className="form-control area_of_container" placeholder="Enter your Name" aria-label="Username" aria-describedby="basic-addon1" value={name} />
                                             
                                             <button  onClick={createUser} className="signup_button">Sign up </button>
-                                            <NavLink to="/login">Sign In</NavLink>
+                                            
 
                                            
                                         </div>

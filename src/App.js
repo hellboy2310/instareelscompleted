@@ -50,8 +50,8 @@ function App() {
           </Route>  
            */}
           {/* <PageNotFound></PageNotFound> */}
-          <NavLink to="/login" className="kuchbhi"><SignUp></SignUp></NavLink>
-         <NavLink ></NavLink> 
+          <SignUp></SignUp>
+         
         </Switch>
       </AuthContextProvider>
     </div>
