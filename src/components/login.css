@@ -1,0 +1,115 @@
+/* Default styles for big screens */
+body {
+    background-color: #eeeeee;
+  }
+  
+  .signup_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+  }
+  
+  .input_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .first_container {
+    margin-top: 2rem;
+  }
+  
+  .area_of_container {
+    margin-bottom: 3rem;
+    height: 3rem;
+    width: 20rem;
+    border-style: none;
+    background-color: #fed1ef;
+    border-radius: 5px;
+  }
+  
+  input::placeholder {
+    font-size: 17px;
+    font-style: initial;
+  }
+  
+  .main_container {
+    height: 40rem;
+    background-color: #d77fa1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .signup_button {
+    font-size: 23px;
+    color: gray;
+    font-style: italic;
+    height: 3rem;
+    width: 20rem;
+    border-style: none;
+    margin-top: 3rem;
+    background-color: #fed1ef;
+    border-radius: 30px;
+  }
+  
+  /* Media queries for responsive styles */
+  @media only screen and (max-width: 1200px) {
+    .signup_header {
+      margin: 10% 5% 5%;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .signup_header {
+      margin: 10% 2% 5%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    body {
+      margin: 0;
+    }
+  
+    .signup_header {
+      margin: 10% 5% 5%;
+    }
+  
+    .area_of_container {
+      width: 80%;
+    }
+  
+    .main_container {
+      height: auto;
+    }
+  
+    .signup_button {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .signup_header {
+      margin: 15% 10% 5%;
+    }
+  
+    .first_container {
+      margin-top: 1rem;
+    }
+  
+    .area_of_container {
+      width: 100%;
+    }
+  
+    .signup_button {
+      height: 2.5rem;
+      width: 100%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 20px;
+    }
+  }
+  

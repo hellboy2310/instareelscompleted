@@ -1,0 +1,158 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .video-card-comment-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+  }
+  
+  .video-card-username {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .video-card-music {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .video-card {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: grey;
+  }
+  
+  .video-card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  .video-card p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .video-card:hover {
+    border: 2px solid #00bfff;
+  }
+  
+  .comment-box {
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .actual-comments{
+    z-index: 2;
+  }
+  .comment-form button {
+    margin: 0 auto;
+    display: block;
+  }
+  .postbtn{
+    margin-top: 2rem;
+  }
+  .inputbtn{
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+  }
+  .comment-form input {
+    width: 85%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .comment-form button {
+    padding: 10px 20px;
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .comment-form button:hover {
+    background-color: #009acd;
+  }
+  
+  .video-card-video {
+    width: 100%;
+    max-width: 25rem;
+background-color: grey;  
+}
+  
+  .chat_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px 24px;
+    margin-bottom: 1rem;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .video-card {
+      max-width: 90%;
+    }
+  
+    .chat_button {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .comment-box {
+      height: 50%;
+    }
+  
+    .comment-form input {
+      width: 75%;
+    }
+  
+    .video-card h2 {
+      font-size: 20px;
+    }
+  
+    .video-card p {
+      font-size: 14px;
+    }
+  
+    .chat_button {
+      padding: 8px 16px;
+    }
+  }
+  
