@@ -86,7 +86,7 @@ function SignUp() {
                                             <input type="name" onChange={Namehandler} className="form-control area_of_container" placeholder="Enter your Name" aria-label="Username" aria-describedby="basic-addon1" value={name} />
                                             
                                             <button  onClick={createUser} className="signup_button">Sign up </button>
-                                            
+                                            {  <NavLink to ='/login'>sign In</NavLink>}
 
                                            
                                         </div>
